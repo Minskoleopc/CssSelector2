@@ -1,11 +1,11 @@
 // 1
 // selecting the element by tagName
 
-    // <div>Elementone</div>
-    // <p id = "one" class = "two">ParaOne</p>
-    // <span>SpanOne</span>
+// <div>Elementone</div>
+// <p id = "one" class = "two">ParaOne</p>
+// <span>SpanOne</span>
 
-    //p
+//p
 
 //2
 // Selecting the element by id 
@@ -54,6 +54,7 @@
 </ul> */}
 
 
+// Descendent selector 
 // ul > li
 {/* <ul>
 <li>Apple</li>
@@ -63,7 +64,44 @@
 <li>Papaya</li>
 </ul> */}
 
+
+
 // ul li
+
+// Adjacent sibling
+// <!--
+//     <h1 id="one">Main title</h1>
+//     <h2>Subtitle</h2> -->
+//h1 + h2
+
+// General sibling selector
+    // <h1 id="one">Main title</h1>
+    // <h2>Subtitle</h2> -->
+    // <span>Description</span>
+    //h1 ~ span
+
+
+
+{/* <ul id = "one">
+    <li>Apple</li>
+    <li>Mango</li>
+    <li>Banana</li>
+    <span>Not a list</span>
+    <li>Grapes</li>
+</ul> */}
+//#one li:nth-child(4)
+
+{/* <ul id = "one">
+    <li>Apple</li>
+    <li>Mango</li>
+    <li>Banana</li>
+    <span>Not a list</span>
+    <li>Grapes</li>
+</ul> */}
+//#one li:nth-of-type(4)
+
+
+
 
 
 
