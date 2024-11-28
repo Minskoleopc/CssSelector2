@@ -7,6 +7,8 @@
 
 //p
 
+
+
 //2
 // Selecting the element by id 
 //<p id = "one">para</p>
@@ -34,6 +36,7 @@
 //<a href = "https://google.com/qwe">Google</a>
 
 //a[href^="https://facebook"]
+// -- //a[starts-with(@href,"https:facebook")]
 
 //EndsWith ($=)
 // <a href = "https://facebook.com/ide">facebook</a>
@@ -94,11 +97,18 @@
 {/* <ul id = "one">
     <li>Apple</li>
     <li>Mango</li>
-    <li>Banana</li>
+    <li>Banana</li> 
     <span>Not a list</span>
     <li>Grapes</li>
 </ul> */}
 //#one li:nth-of-type(4)
+
+
+// 13 Negation Selector (:not)
+// <!-- <button class = "btn-one">Button1</button>
+// <button class = "btn-disabled">Button2</button>
+// <button class = "btn-secondary">Button3</button> -->
+//button:not(.btn-disabled)
 
 
 
