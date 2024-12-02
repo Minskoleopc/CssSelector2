@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPath Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .example {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2a9d8f;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>XPath Examples</h1>
+
+    <!-- Example 1: Select by Tag Name -->
+    <div class="example">
+        <h2>1. Select by Tag Name</h2>
+        <div>Div Element</div>
+        <span>Span Element</span>
+        <p>Paragraph Element</p>
+        <!-- XPath: //p -->
+        <!-- Solution: Matches <p>Paragraph Element</p> -->
+    </div>
+<!-- 
+    <!-- Example 2: Select by ID -->
+    <div class="example">
+        <h2>2. Select by ID</h2>
+        <input id="search-bar" type="text" placeholder="Search here..." />
+        <!-- XPath: //*[@id="search-bar"] -->
+        <!-- Solution: Matches <input id="search-bar" type="text" placeholder="Search here..." /> -->
+    </div>
+
+    <!-- Example 3: Select by Class -->
+    <div class="example">
+        <h2>3. Select by Class</h2>
+        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-secondary">Cancel</button>
+        <!-- XPath: //*[contains(@class, "btn-primary")] -->
+        <!-- Solution: Matches <button class="btn btn-primary">Submit</button> -->
+    </div>
+
+    <!-- Example 4: Select by Attribute -->
+    <div class="example">
+        <h2>4. Select by Attribute</h2>
+        <img src="logo.png" alt="Company Logo" />
+        <img src="banner.png" alt="Website Banner" />
+        <!-- XPath: //img[@alt="Company Logo"] -->
+        <!-- Solution: Matches <img src="logo.png" alt="Company Logo" /> -->
+    </div>
+
+    <!-- Example 5: Select by Multiple Attributes -->
+    <div class="example">
+        <h2>5. Select by Multiple Attributes</h2>
+        <input type="email" name="user-email" placeholder="Enter your email" />
+        <!-- XPath: //input[@type="email" and @name="user-email"] -->
+        <!-- Solution: Matches <input type="email" name="user-email" placeholder="Enter your email" /> -->
+    </div>
+
+    <!-- Example 6: Partial Match on Attribute Values -->
+    <div class="example">
+        <h2>6. Partial Match on Attribute Values</h2>
+        <a href="https://example.com">Example</a>
+        <a href="https://docs.example.com">Documentation</a>
+        <!-- XPath (starts-with): //a[starts-with(@href, "https://docs")] -->
+        <!-- Solution: Matches <a href="https://docs.example.com">Documentation</a> -->
+        <!-- XPath (contains): //a[contains(@href, "example")] -->
+        <!-- Solution: Matches both <a> elements -->
+    </div>
+
+    <!-- Example 7: Direct Child Selector -->
+    <div class="example">
+        <h2>7. Direct Child Selector</h2>
+        <ul>
+            <li>Item 1</li>
+            <ul>
+                <li>Nested Item</li>
+            </ul>
+        </ul>
+        <!-- XPath: //ul/li -->
+        <!-- Solution: Matches <li>Item 1</li> -->
+    </div>
+
+    <!-- Example 8: Descendant Selector -->
+    <div class="example">
+        <h2>8. Descendant Selector</h2>
+        <div class="container">
+            <section>
+                <p>Paragraph 1</p>
+            </section>
+        </div>
+        <!-- XPath: //div[@class="container"]//p -->
+        <!-- Solution: Matches <p>Paragraph 1</p> -->
+    </div>
+
+    <!-- Example 9: Adjacent Sibling Selector -->
+    <div class="example">
+        <h2>9. Adjacent Sibling Selector</h2>
+        <h1>Main Title</h1>
+        <h2>Subtitle</h2>
+        <!-- XPath: //h1/following-sibling::h2[1] -->
+        <!-- Solution: Matches <h2>Subtitle</h2> -->
+    </div>
+
+    <!-- Example 10: General Sibling Selector -->
+    <div class="example">
+        <h2>10. General Sibling Selector</h2>
+        <h1>Main Title</h1>
+        <h2>Subtitle</h2>
+        <p>Description</p>
+        <!-- XPath: //h1/following-sibling::p -->
+        <!-- Solution: Matches <p>Description</p> -->
+    </div>
+
+    <!-- Example 11: nth-child -->
+    <div class="example">
+        <h2>11. nth-child</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <span>Not a list item</span>
+            <li>Item 3</li>
+        </ul>
+        <!-- XPath: //ul/li[3] -->
+        <!-- Solution: Does not match because the third child is a <span>. -->
+    </div>
+
+    <!-- Example 12: nth-of-type -->
+    <div class="example">
+        <h2>12. nth-of-type</h2>
+        <ul>
+            <li>Item 1</li>
+            <span>Not a list item</span>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <!-- XPath: //ul/li[position()=2] -->
+        <!-- Solution: Matches <li>Item 2</li> -->
+    </div>
+
+    <!-- Example 13: Negation Selector -->
+    <div class="example">
+        <h2>13. Negation Selector</h2>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-disabled" disabled>Disabled</button>
+        <!-- XPath: //button[not(@disabled)] -->
+        <!-- Solution: Matches <button class="btn btn-primary">Primary</button> and <button class="btn btn-secondary">Secondary</button> -->
+    </div> -->
+</body>
+</html>
